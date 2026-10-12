@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Welcome back</h1>
+    <p class="subtitle">Sign in to continue</p>
+
+    <form id="login-form" novalidate>
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" autocomplete="username" aria-describedby="username-error" />
+        <p class="error" id="username-error" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <div class="password-wrap">
+          <input type="password" id="password" name="password" autocomplete="current-password" aria-describedby="password-error" />
+          <button type="button" id="toggle-password" aria-label="Show password">Show</button>
+        </div>
+        <p class="error" id="password-error" role="alert"></p>
+      </div>
+
+      <div class="row">
+        <label class="checkbox">
+          <input type="checkbox" id="remember" />
+          Remember me
+        </label>
+        <a href="#" id="forgot-link">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="primary" id="submit-btn">Sign in</button>
+      <p class="status" id="form-status" role="status"></p>
+    </form>
+
+    <div class="divider"><span>or continue with</span></div>
+
+    <div class="social">
+      <button type="button" class="social-btn" data-provider="Google">Google</button>
+      <button type="button" class="social-btn" data-provider="Facebook">Facebook</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
