@@ -4,7 +4,7 @@ A responsive login screen built with plain HTML, CSS and JavaScript (no dependen
 
 ## Video walkthrough
 
-**Code explanation (5 min):** https://REPLACE-WITH-YOUR-PUBLIC-VIDEO-URL
+**Code explanation (5 min):** https://youtu.be/Bc8-YpgdkLc
 
 ## Features
 
